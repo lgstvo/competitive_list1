@@ -4,26 +4,18 @@
 #define endl '\n'
 #define INF 0x3f3f3f3f
 #define LINF 0x3f3f3f3f3f3f3f3fLL
-#define pb push_back
-#define mp make_pair
 #define REP(i,n) for(int i=0; i<n;i++)
-//#define max(i,j) (i<j?j:i)
-
 
 #define MAXN 1010
 #define MAXM (MAXN+MAXN)
 
 const int MAXC=1000;
 
-//int v[MAXN];
-
 using namespace std;
 
-int main(){	_
 
-	return 0;
+int main()
+{	_
+
+    return 0;
 }
-
-
-
-
