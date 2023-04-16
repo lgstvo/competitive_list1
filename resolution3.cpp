@@ -6,7 +6,7 @@
 #define LINF 0x3f3f3f3f3f3f3f3fLL
 #define REP(i,n) for(int i=0; i<n;i++)
 
-#define MAXN 1010
+#define MAXN 30
 #define MAXM (MAXN+MAXN)
 
 const int MAXC=1000;
@@ -16,7 +16,7 @@ using namespace std;
 
 void caminho(int v, vector<int>& visited, int (*adj)[30]){
     visited[v] = 1;
-    for(int y = 0; y < v; y++){
+    for(int y = 0; y < 30; y++){
         if(adj[v][y] == 1 && visited[y] == 0)
             caminho(y, visited, adj);
     }
@@ -47,7 +47,7 @@ int main()
             adj[intb][inta] = 1;
         }
         comp = 0;
-        cout << "Case " << i+1 << ":" << endl;
+        cout << "Case #" << i+1 << ":" << endl;
 
         for(int x = 0; x < v; x++){
             if(visited[x] == 0){
@@ -59,11 +59,12 @@ int main()
                         visited[y] = -1;
                     }
                 }
-            }
             cout << endl;
+            }
         }
 
         cout << comp << " connected components" << endl;
+        cout << endl;
     }
 
     return 0;
